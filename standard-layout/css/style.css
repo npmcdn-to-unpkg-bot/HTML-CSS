@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;//ユーザーがブラウザでフォント指定を変更した時に％指定だと
+  //ある程度その設定を反映することができる。
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+.header {
+  widows: 100%;
+  padding: 28px 0 10px;
+  background: url('../images/bg-header.gif') repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
+}
+
+.wrapper {
+  width: 970px;
+  margin: 30px auto 40px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main {
+  display: block;
+  float: left;
+  width: 660px;
+}
+
+.sidemenu {
+  float: right;
+  width: 275px;
+}
+
+.footer {
+  width: 100%;
+}
